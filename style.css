@@ -1,0 +1,447 @@
+body, html {
+    height: 100%;
+    margin: 0;
+	background-color:lightgrey;
+	font-family:raleway;
+	
+}
+
+.parallax {
+	max-width:100%;
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-img1 {
+    /* The image used */
+    background-image: url('images/img12.png');
+	-webkit-filter: grayscale(0%);  Safari 6.0 - 9.0 
+    filter: grayscale(0%);
+/*	-webkit-filter: blur(5px);  Safari 6.0 - 9.0 
+    filter: blur(5px);*/
+}
+.p-img2 {
+    /* The image used */
+    background-image: url('images/img2.jpg');
+}
+.p-img3 {
+    /* The image used */
+    background-image: url('images/img13.jpg');
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+#mySidenav{
+	transition: right 1s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#mySidenav a {
+    position: fixed;
+    right: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 140px;
+	height:auto;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+    border-radius:  5px 0 0 5px ;
+	transition: top 1s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#mySidenav a:hover {
+    right: 0;
+	transition: top 1s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#who {
+    top: 180px;
+    background-color: #cc00cc;
+}
+
+#how {
+    top: 250px;
+    background-color: #cc00cc;
+}
+
+#what {
+    top: 320px;
+    background-color: #cc00cc;
+}
+
+#where {
+    top: 390px;
+    background-color: #cc00cc;
+}
+
+
+
+::-webkit-scrollbar-track {
+      background-color:rgba(255, 0, 0,0);
+	  
+    }
+
+::-webkit-scrollbar
+{
+	width: 3px;
+	background-color:rgba(255, 0, 0,0);
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: black;
+	
+}
+
+
+
+
+#bg {
+  background-color: rgba(242,242,242,1);
+  top:-59px;
+  width:100%;
+  height:59px;
+  position:fixed;
+  z-index:2;
+}
+
+#login,#register,#logo{  
+  color: #c0c;
+  font-size: 18px;
+}
+
+#book-now{
+  display:none;
+  color: rgb(242,242,242);
+  font-size: 18px;
+  font-weight:bold; 
+  background-color:#c0c;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #c0c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+	border:none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the sign up button */
+.signupbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #c0c;
+	
+}
+.loginbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #c0c;
+	
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 40px 0;
+    position: relative;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+	height:auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .signupbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+.hero{
+	width:100%;
+	height:h;
+	position:absolute;
+	text-align: center;
+	color: #c0c;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero button{
+	border-radius: 8px;
+	border:none;
+	width:50%	
+}
+
+
+
+
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+.mg{
+	background-image:url(images/tv.png);
+	background-size: cover;
+    background-repeat: repeat;
+	height:300px;
+	max-width:480px;	
+}
+.mg iframe{
+	padding-top:12px;
+	padding-left:10px;
+	padding-right:5px;
+}
+@media (min-width:240px) and (max-width:720px){
+
+.mg{
+	width:100%;
+
+}
+.ma{
+	width:100%;
+}
+.fi{
+	height:800px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+#first{
+	padding:18px 16px;
+	height:420px;
+-webkit-transition-duration:1s; /* Safari */
+  transition-duration: 1s;
+}
+
+
+
+
+
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+a.logout{float: right;}
+p.success{color:#34A853;}
+p.error{color:#EA4335;}
